@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <h1>Linked List Visualizer</h1>
+            <p>Interactive tool to perform and visualize linked list operations</p>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <section class="linked-list-display">
+                <h2>Linked List</h2>
+                <div id="linked-list" class="linked-list">List is empty</div>
+            </section>
+            <section class="controls">
+                <div class="input-group">
+                    <input type="text" id="value" placeholder="Enter Value" class="input">
+                    <input type="number" id="position" placeholder="Enter Position (Optional)" class="input">
+                </div>
+                <div class="button-group">
+                    <button onclick="addAtBeginning()" class="btn btn-primary">Add at Beginning</button>
+                    <button onclick="addAtEnd()" class="btn btn-primary">Add at End</button>
+                    <button onclick="addAtPosition()" class="btn btn-primary">Add at Position</button>
+                    <button onclick="deleteBeginning()" class="btn btn-danger">Delete Beginning</button>
+                    <button onclick="deleteEnd()" class="btn btn-danger">Delete End</button>
+                    <button onclick="deleteByValue()" class="btn btn-warning">Delete by Value</button>
+                    <button onclick="searchValue()" class="btn btn-secondary">Search Value</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Linked List Visualizer | Created with ❤️ by Prem</p>
+            <p><a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
